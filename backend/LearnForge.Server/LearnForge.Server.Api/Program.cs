@@ -1,18 +1,8 @@
-using LearnForge.Server.Api.Data.Context;
-using LearnForge.Server.Api.Data.Repositories.Interfaces;
 using LearnForge.Server.Api.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-builder.Services.AddSingleton<IDapperContext, DapperContext>();
-
-// configurations
-builder.Services.Configure<ConnectionStringSettings>(builder.Configuration.GetSection("ConnectionStrings"));
+builder.Services.AddConfigurations(builder.Configuration);
 
 var app = builder.Build();
 
