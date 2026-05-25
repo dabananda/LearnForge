@@ -1,0 +1,6 @@
+@QuestPdfTutorial_HostAddress = http://localhost:5050
+
+GET {{QuestPdfTutorial_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
