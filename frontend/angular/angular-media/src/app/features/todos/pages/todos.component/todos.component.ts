@@ -1,10 +1,12 @@
-import { Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { TodosService } from '../../services/todos.service';
 import { Todo } from '../../models/todo';
+import { TodolistComponent } from '../../components/todolist.component/todolist.component';
 
 @Component({
-  selector: 'app-todos.component',
-  imports: [],
+  selector: 'app-todos',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [TodolistComponent],
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.css',
 })
@@ -28,7 +30,7 @@ export class TodosComponent {
       },
       complete: () => {
         this.loading.set(false);
-      }
+      },
     });
   }
 }

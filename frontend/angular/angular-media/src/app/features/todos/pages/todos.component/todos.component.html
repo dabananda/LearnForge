@@ -1,0 +1,9 @@
+@if (loading()) {
+  <h1>Loading...</h1>
+}
+@else if (errors()) {
+  <h1>{{ errors() }}</h1>
+}
+@else {
+  <app-todolist [todos]="todos()" />
+}
