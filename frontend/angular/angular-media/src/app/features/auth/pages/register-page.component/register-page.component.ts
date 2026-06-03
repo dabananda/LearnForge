@@ -1,9 +1,10 @@
 import { Component, inject, signal } from '@angular/core';
 import { AuthService } from '../../services/Auth/auth.service';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { minLength } from '@angular/forms/signals';
 
 @Component({
-  selector: 'app-register-page.component',
+  selector: 'app-register-page',
   imports: [FormsModule, ReactiveFormsModule],
   templateUrl: './register-page.component.html',
   styleUrl: './register-page.component.css',
@@ -50,4 +51,6 @@ export class RegisterPageComponent {
       },
     });
   }
+
+  protected readonly minLength = minLength;
 }

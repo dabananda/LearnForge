@@ -1,6 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthService } from '../../services/Auth/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-page',
@@ -11,6 +12,7 @@ import { AuthService } from '../../services/Auth/auth.service';
 export class LoginPageComponent {
   readonly loading = signal(false);
   readonly error = signal<string | null>(null);
+  private readonly router = inject(Router)
 
   readonly form = new FormGroup({
     email: new FormControl('', {
@@ -37,6 +39,7 @@ export class LoginPageComponent {
     this.authService.login(this.form.getRawValue()).subscribe({
       next: () => {
         console.log('Login successful');
+        this.router.navigate(['/login']);
       },
       error: () => {
         this.error.set('Invalid email or password');

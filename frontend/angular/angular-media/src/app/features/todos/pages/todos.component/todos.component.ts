@@ -23,7 +23,7 @@ export class TodosComponent {
   private loadTodos() {
     this.todosService.getTodos().subscribe({
       next: (data) => {
-        this.todos.set(data.splice(0, 20));
+        this.todos.set(data.slice(0, 20));
       },
       error: () => {
         this.errors.set('Failed to load todos');
