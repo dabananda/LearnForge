@@ -7,9 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\InvoiceGenerator.Modules.Product.Aggregator\InvoiceGenerator.Modules.Product.Aggregator.csproj" />
     <ProjectReference Include="..\InvoiceGenerator.Modules.Product.DTOs\InvoiceGenerator.Modules.Product.DTOs.csproj" />
     <ProjectReference Include="..\InvoiceGenerator.Modules.Product.Repositories\InvoiceGenerator.Modules.Product.Repositories.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Queries\GetProductById\" />
+    <Folder Include="Queries\" />
   </ItemGroup>
 
 </Project>
