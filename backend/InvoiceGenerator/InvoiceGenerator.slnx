@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="InvoiceGenerator.Api/InvoiceGenerator.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Product/">
+    <Project Path="InvoiceGenerator.Modules.Product.Aggregator/InvoiceGenerator.Modules.Product.Aggregator.csproj" />
+    <Project Path="InvoiceGenerator.Modules.Product.Api/InvoiceGenerator.Modules.Product.Api.csproj" />
+    <Project Path="InvoiceGenerator.Modules.Product.DTOs/InvoiceGenerator.Modules.Product.DTOs.csproj" />
+    <Project Path="InvoiceGenerator.Modules.Product.Handlers/InvoiceGenerator.Modules.Product.Handlers.csproj" />
+    <Project Path="InvoiceGenerator.Modules.Product.Repositories/InvoiceGenerator.Modules.Product.Repositories.csproj" />
+  </Folder>
+</Solution>

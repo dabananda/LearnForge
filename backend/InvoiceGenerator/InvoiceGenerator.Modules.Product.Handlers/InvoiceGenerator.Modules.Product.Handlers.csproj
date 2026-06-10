@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InvoiceGenerator.Modules.Product.Aggregator\InvoiceGenerator.Modules.Product.Aggregator.csproj" />
+    <ProjectReference Include="..\InvoiceGenerator.Modules.Product.DTOs\InvoiceGenerator.Modules.Product.DTOs.csproj" />
+    <ProjectReference Include="..\InvoiceGenerator.Modules.Product.Repositories\InvoiceGenerator.Modules.Product.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
