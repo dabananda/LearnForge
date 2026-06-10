@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\InvoiceGenerator.Modules.Product.DTOs\InvoiceGenerator.Modules.Product.DTOs.csproj" />
+  </ItemGroup>
+
 </Project>

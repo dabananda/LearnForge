@@ -2,7 +2,7 @@
 {
     public interface IProductRepository
     {
-        Task<Aggregator.Product?> GetProductByIdAsync(Guid productId);
+        Task<Aggregator.Product?> GetProductByIdAsync(Guid id);
         Task<IEnumerable<Aggregator.Product>> GetProductsAsync();
         Task AddProduct(Aggregator.Product product);
         Task UpdateProduct(Aggregator.Product product);

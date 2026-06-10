@@ -19,11 +19,11 @@ namespace InvoiceGenerator.Modules.Product.Repositories
             return connection.ExecuteAsync(query, new { Id = product.Id });
         }
 
-        public async Task<Aggregator.Product?> GetProductByIdAsync(Guid productId)
+        public async Task<Aggregator.Product?> GetProductByIdAsync(Guid id)
         {
             using var connection = _context.CreateConnection();
             const string query = "SELECT * FROM Products WHERE Id = @Id";
-            return await connection.QueryFirstOrDefaultAsync<Aggregator.Product>(query, new { Id = productId });
+            return await connection.QueryFirstOrDefaultAsync<Aggregator.Product>(query, new { Id = id });
         }
 
         public Task<IEnumerable<Aggregator.Product>> GetProductsAsync()

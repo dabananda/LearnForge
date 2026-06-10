@@ -16,9 +16,4 @@
     <ProjectReference Include="..\InvoiceGenerator.Modules.Product.Repositories\InvoiceGenerator.Modules.Product.Repositories.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Queries\GetProductById\" />
-    <Folder Include="Queries\" />
-  </ItemGroup>
-
 </Project>

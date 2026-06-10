@@ -1,4 +1,6 @@
-﻿namespace InvoiceGenerator.Modules.Product.Aggregator
+﻿using InvoiceGenerator.Modules.Product.DTOs.DTOs;
+
+namespace InvoiceGenerator.Modules.Product.Aggregator
 {
     public class Product
     {
@@ -48,6 +50,17 @@
                 throw new ArgumentOutOfRangeException(nameof(unitPrice), "Unit price cannot be negative.");
 
             UnitPrice = unitPrice;
+        }
+
+        public static ProductDTO ToDTO(Product product)
+        {
+            return new ProductDTO
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Price = product.UnitPrice,
+                Quantity = product.Quantity
+            };
         }
     }
 }
