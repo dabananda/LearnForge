@@ -24,7 +24,8 @@ namespace InvoiceGenerator.Modules.Category.Application.Queries.GetCategories
             {
                 Id = c.Id,
                 Name = c.Name,
-                Description = c.Description
+                Description = c.Description,
+                ParentCategoryId = c.ParentCategoryId
             }).ToList();
 
             var pagedResponse = new PagedList<CategoryDto>(response, request.PageNumber ?? 1, request.PageSize ?? 10, response.Count);

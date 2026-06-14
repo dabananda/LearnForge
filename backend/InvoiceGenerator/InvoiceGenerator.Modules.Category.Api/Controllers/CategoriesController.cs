@@ -1,4 +1,5 @@
-﻿using InvoiceGenerator.Modules.Category.Application.Queries.GetCategories;
+﻿using InvoiceGenerator.Modules.Category.Application.Commands.CreateCategory;
+using InvoiceGenerator.Modules.Category.Application.Queries.GetCategories;
 using InvoiceGenerator.Shared;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,12 @@ namespace InvoiceGenerator.Modules.Category.Api.Controllers
         public async Task<IActionResult> GetAll([FromQuery] GetCategoriesQuery query)
         {
             return Handle(await mediator.Send(query));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] CreateCategoryCommand command)
+        {
+            return Handle(await mediator.Send(command));
         }
     }
 }
