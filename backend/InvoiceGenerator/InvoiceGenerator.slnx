@@ -1,20 +1,13 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="InvoiceGenerator.Api/InvoiceGenerator.Api.csproj" />
+    <Project Path="InvoiceGenerator.Shared/InvoiceGenerator.Shared.csproj" Id="d49d5db3-8e83-4622-8c80-dfd91fb255ac" />
   </Folder>
   <Folder Name="/src/Modules/" />
   <Folder Name="/src/Modules/Catagory/">
-    <Project Path="InvoiceGenerator.Modules.Category.Aggregators/InvoiceGenerator.Modules.Category.Aggregators.csproj" Id="766789a3-1570-4d43-9024-faa358347c43" />
     <Project Path="InvoiceGenerator.Modules.Category.Api/InvoiceGenerator.Modules.Category.Api.csproj" Id="009baf21-3b05-439e-822c-f68218efa4e9" />
-    <Project Path="InvoiceGenerator.Modules.Category.DTOs/InvoiceGenerator.Modules.Category.DTOs.csproj" Id="28d077e5-1d7f-4a4d-8a91-a85f252b6bee" />
-    <Project Path="InvoiceGenerator.Modules.Category.Handlers/InvoiceGenerator.Modules.Category.Handlers.csproj" Id="ac821cc2-d721-4e4f-adb1-a3a5de3fbe7f" />
-    <Project Path="InvoiceGenerator.Modules.Category.Repositories/InvoiceGenerator.Modules.Category.Repositories.csproj" Id="12536b82-6430-4ab9-9812-ac9cab6c3155" />
-  </Folder>
-  <Folder Name="/src/Modules/Product/">
-    <Project Path="InvoiceGenerator.Modules.Product.Aggregator/InvoiceGenerator.Modules.Product.Aggregator.csproj" />
-    <Project Path="InvoiceGenerator.Modules.Product.Api/InvoiceGenerator.Modules.Product.Api.csproj" />
-    <Project Path="InvoiceGenerator.Modules.Product.DTOs/InvoiceGenerator.Modules.Product.DTOs.csproj" />
-    <Project Path="InvoiceGenerator.Modules.Product.Handlers/InvoiceGenerator.Modules.Product.Handlers.csproj" />
-    <Project Path="InvoiceGenerator.Modules.Product.Repositories/InvoiceGenerator.Modules.Product.Repositories.csproj" />
+    <Project Path="InvoiceGenerator.Modules.Category.Application/InvoiceGenerator.Modules.Category.Application.csproj" Id="bfa72cf2-5534-4bd3-a084-eaa2b88007fc" />
+    <Project Path="InvoiceGenerator.Modules.Category.Domain/InvoiceGenerator.Modules.Category.Domain.csproj" Id="707e11a9-cfa6-4dd0-975b-6be220fa8023" />
+    <Project Path="InvoiceGenerator.Modules.Category.Infrastructure/InvoiceGenerator.Modules.Category.Infrastructure.csproj" Id="b9dcd5c2-8409-49e2-beb1-1c67f4efd556" />
   </Folder>
 </Solution>

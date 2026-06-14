@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InvoiceGenerator.Modules.Category.Api\InvoiceGenerator.Modules.Category.Api.csproj" />
-    <ProjectReference Include="..\InvoiceGenerator.Modules.Product.Api\InvoiceGenerator.Modules.Product.Api.csproj" />
   </ItemGroup>
 
 </Project>

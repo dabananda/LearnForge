@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\InvoiceGenerator.Modules.Category.DTOs\InvoiceGenerator.Modules.Category.DTOs.csproj" />
+    <ProjectReference Include="..\InvoiceGenerator.Modules.Category.Application\InvoiceGenerator.Modules.Category.Application.csproj" />
+    <ProjectReference Include="..\InvoiceGenerator.Modules.Category.Infrastructure\InvoiceGenerator.Modules.Category.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

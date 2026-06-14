@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\InvoiceGenerator.Modules.Category.Aggregators\InvoiceGenerator.Modules.Category.Aggregators.csproj" />
     <ProjectReference Include="..\InvoiceGenerator.Modules.Category.DTOs\InvoiceGenerator.Modules.Category.DTOs.csproj" />
     <ProjectReference Include="..\InvoiceGenerator.Modules.Category.Repositories\InvoiceGenerator.Modules.Category.Repositories.csproj" />
