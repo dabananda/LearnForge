@@ -1,0 +1,19 @@
+CREATE TABLE Products (
+    ID UNIQUEIDENTIFIER NOT NULL DEFAULT NEWID() PRIMARY KEY,
+    
+    Name NVARCHAR(250) NOT NULL,
+    Description NVARCHAR(2000) NULL,
+    
+    CategoryID UNIQUEIDENTIFIER NOT NULL,
+    
+    Price DECIMAL(18,2) NOT NULL,
+    Quantity INT DEFAULT 0,
+    IsActive BIT DEFAULT 1,
+
+    CreatedAt DATETIME DEFAULT GETDATE(),
+    UpdatedAt DATETIME NULL,
+    IsDeleted BIT DEFAULT 0,
+    DeletedAt DATETIME NULL,
+
+    CONSTRAINT FK_Products_Categories FOREIGN KEY (CategoryID) REFERENCES Categories(ID)
+);
