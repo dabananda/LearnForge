@@ -10,6 +10,11 @@
         private readonly List<Category> _children = [];
         public IReadOnlyCollection<Category> Children => _children.AsReadOnly();
 
+        public Category()
+        {
+            
+        }
+
         public Category(string name, string? description = null, Guid? parentCategoryId = null)
         {
             Id = Guid.NewGuid();
