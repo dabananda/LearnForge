@@ -3,6 +3,13 @@
     <Project Path="InvoiceGenerator.Api/InvoiceGenerator.Api.csproj" />
   </Folder>
   <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Catagory/">
+    <Project Path="InvoiceGenerator.Modules.Category.Aggregators/InvoiceGenerator.Modules.Category.Aggregators.csproj" Id="766789a3-1570-4d43-9024-faa358347c43" />
+    <Project Path="InvoiceGenerator.Modules.Category.Api/InvoiceGenerator.Modules.Category.Api.csproj" Id="009baf21-3b05-439e-822c-f68218efa4e9" />
+    <Project Path="InvoiceGenerator.Modules.Category.DTOs/InvoiceGenerator.Modules.Category.DTOs.csproj" Id="28d077e5-1d7f-4a4d-8a91-a85f252b6bee" />
+    <Project Path="InvoiceGenerator.Modules.Category.Handlers/InvoiceGenerator.Modules.Category.Handlers.csproj" Id="ac821cc2-d721-4e4f-adb1-a3a5de3fbe7f" />
+    <Project Path="InvoiceGenerator.Modules.Category.Repositories/InvoiceGenerator.Modules.Category.Repositories.csproj" Id="12536b82-6430-4ab9-9812-ac9cab6c3155" />
+  </Folder>
   <Folder Name="/src/Modules/Product/">
     <Project Path="InvoiceGenerator.Modules.Product.Aggregator/InvoiceGenerator.Modules.Product.Aggregator.csproj" />
     <Project Path="InvoiceGenerator.Modules.Product.Api/InvoiceGenerator.Modules.Product.Api.csproj" />
